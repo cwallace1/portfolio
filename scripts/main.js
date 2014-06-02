@@ -1,3 +1,11 @@
 $(document).on("ready", function(){
-    var page = "page";
+    $(window).scroll(function () {
+        var slideVal = $(window).scrollTop();
+        if (slideVal > 0) {
+            $("header").removeClass("top");
+        }
+        else {
+             $("header").addClass("top");
+        }
+    });
 });

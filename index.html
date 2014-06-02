@@ -10,7 +10,7 @@
     <title>Chase Wallace - Front-End Pyromaniac</title>
 </head>
 <body>
-    <header><h1 class="name">Chase Wallace</h1><p class="title">Digital Developer.<br/>Now with 200% Flare!</p></header>
+    <header class="top"><h1 class="name">Chase Wallace</h1><p class="title">Digital Developer.<br/>Now with 200% Flare!</p></header>
     <div id="container">
         <div id="description">
             <img src="images/torched-silhouette.jpg" alt="Image Unknown" width="150" height="296" />
@@ -23,33 +23,93 @@
         <div id="examples">
             <h2>Examples Abound!</h2>
             <p>Talk is cheap! I am a busy individual! Show me what this creature of flames can do with the magic of code! I shall click these examples to further experience his&nbsp;skills!</p>
-            <div class="work-display" id="magic8"><a href="#examples">Exit the Magic 8 Ball Window<br/><iframe src="http://cwallace1.github.io/magic-8-ball/" name="magic8I"></iframe></a></div>
-            <div class="work-display" id="smtQuiz"><a href="#examples">Exit the SMT: The Quiz Window<br/><iframe src="http://cwallace1.github.io/SMT--Quiz/" name="smtQuizI"></iframe></a></div>
-            <div class="work-display" id="hotCold"><a href="#examples">Exit the Hot or Less Hot Window<br/><iframe src="http://cwallace1.github.io/hot-or-less-hot/" name="hotColdI"></iframe></a></div>
-            <div class="work-display" id="burnList"><a href="#examples">Exit the The Burn List Window<br/><iframe src="http://cwallace1.github.io/the-burn-list/" name="burnListI"></iframe></a></div>
-            <ul>
-                <li id="magic8Li"><a href="#magic8">Magic 8 Ball<br/>
-                    <img src="images/magic8.png" alt="Magic 8 Ball" /></a>
+            <div class="work-display" id="magic8">
+                <div class="exampleDisplay">
+                    <a href="#examples">Exit the Magic 8 Ball Window</a><br/>
+                    <div class="lefter">
+                        <p class="workPar">This app allows a user to ask a &ldquo;Yes/No Question&rdquo; and receive a response. Skills shown:</p>
+                        <ul class="workList">
+                            <li>CSS Animations</li>
+                            <li>AJAX GET/PUSH</li>
+                            <li>DOM Manipulation</li>
+                            <li>jQuery</li>
+                        </ul>
+                        <a href="http://cwallace1.github.io/magic-8-ball/" target="_blank">View the Page Here</a>
+                    </div>
+                    <img src="images/magic8.png" alt="Magic 8 Ball" />
+                </div>
+            </div>
+            <div class="work-display" id="smtQuiz">
+                <div class="exampleDisplay">
+                    <a href="#examples">Exit the SMT: The Quiz Window</a>
+                    <div class="lefter">
+                        <p></p>
+                        <ul class="workList">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <a href="http://cwallace1.github.io/SMT--Quiz/" target="_blank">View the Page Here</a>
+                    </div>
+                    <img src="images/smt-quiz.png" alt="SMT: The Quiz" />
+                </div>
+            </div>
+            <div class="work-display" id="hotCold">
+                <div class="exampleDisplay">
+                    <a href="#examples">Exit the Hot or Less Hot Window</a>
+                    <div class="lefter">
+                        <p></p>
+                        <ul class="workList">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <a href="http://cwallace1.github.io/hot-or-less-hot/" target="_blank">View the Page Here</a>
+                    </div>
+                    <img src="images/hot-less-hot.png" alt="Hot or Less Hot" />
+                </div>
+            </div>
+            <div class="work-display" id="burnList">
+                <div class="exampleDisplay">
+                    <a href="#examples">Exit the The Burn List Window</a>
+                    <div class="lefter">
+                        <p></p>
+                        <ul class="workList">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <a href="http://cwallace1.github.io/the-burn-list/" target="_blank">View the Page Here</a>
+                    </div>
+                    <img src="images/burn-list.png" alt="The Burn List" />
+                </div>
+            </div>
+            <ul id="exampleList">
+                <li id="hotColdLi"><a href="#hotCold"><div class="examPle">Hot or Less Hot<br/>
+                    <img src="images/hot-less-hot.png" alt="Hot or Less Hot" /></div></a>
                 </li>
-                <li id="burnListLi"><a href="#burnList">The Burn List<br/>
-                    <img src="images/burn-list.png" alt="The Burn List" /></a>
+                <li id="burnListLi"><a href="#burnList"><div class="examPle">The Burn List<br/>
+                    <img src="images/burn-list.png" alt="The Burn List" /></div></a>
                 </li>
-                <li id="smtQuizLi"><a href="#smtQuiz">SMT: The Quiz<br/>
-                    <img src="images/smt-quiz.png" alt="SMT: The Quiz" /></a>
+                <li id="smtQuizLi"><a href="#smtQuiz"><div class="examPle">SMT: The Quiz<br/>
+                    <img src="images/smt-quiz.png" alt="SMT: The Quiz" /></div></a>
                 </li>
-                <li id="hotColdLi"><a href="#hotCold">Hot or Less Hot<br/>
-                    <img src="images/hot-less-hot.png" alt="Hot or Less Hot" /></a>
+                <li id="magic8Li"><a href="#magic8"><div class="examPle">Magic 8 Ball<br/>
+                    <img src="images/magic8.png" alt="Magic 8 Ball" /></div></a>
                 </li>
             </ul>
         </div>
     </div>
     <footer><h2 class="contact">Contact<br/>Chase</h2>
         <div class="methods">
-            <ul>
-                <li><a href="#"><img id="email" src="images/blaze-email.png" alt="email" /><span id="email-span">Email</span></a></li>
-                <li><a href="#"><img id="facebook" src="images/blaze-facebook.png" alt="facebook" /><span id="facebook-span">Facebook</span></a></li>
-                <li><a href="#"><img id="google" src="images/blaze-google.png" alt="google" /><span id="google-span">Google+</span></a></li>
-                <li><a href="#"><img id="github" src="images/blaze-github.png" alt="github" /><span id="github-span">Github</span></a></li>
+            <ul id="contactList">
+                <li><a href="#"><div class="image"><img id="email" src="images/blaze-email.png" alt="email" /><span id="email-span">Email</span></div></a></li>
+                <li><a href="#"><div class="image"><img id="facebook" src="images/blaze-facebook.png" alt="facebook" /><span id="facebook-span">Facebook</span></div></a></li>
+                <li><a href="#"><div class="image"><img id="google" src="images/blaze-google.png" alt="google" /><span id="google-span">Google+</span></div></a></li>
+                <li><a href="#"><div class="image"><img id="github" src="images/blaze-github.png" alt="github" /><span id="github-span">Github</span></div></a></li>
             </ul>
             <p>in any of these convenient ways!</p>
         </div>
