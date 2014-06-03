@@ -155,7 +155,7 @@ body {
 }
 #exampleList li img {
     width: 95%;
-    margin: 5px auto 25px;
+    margin: 5px auto;
 }
 .work-display {
     display: none;
