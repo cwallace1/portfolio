@@ -2,10 +2,10 @@ $(document).on("ready", function(){
     $(window).scroll(function () {
         var slideVal = $(window).scrollTop();
         if (slideVal > 0) {
-            $("header").removeClass("top");
+            $("header").addClass("notTop");
         }
         else {
-             $("header").addClass("top");
+             $("header").removeClass("notTop");
         }
     });
 });

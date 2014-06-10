@@ -16,28 +16,41 @@ header {
     margin: auto;
     z-index: 4;
 }
-.name {
+.notTop h1{
     font-size: 48px;
     line-height: 48px;
     display: inline-block;
+    height: 60px;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
 }
-.top .name {
+.name {
     font-size: 76px;
     line-height: 76px;
+    height: 140px;
     display: inline-block;
 }
-.title {
+.notTop p{
     display: inline-block;
     text-align: left;
     color: inherit;
     font-size: 20px;
     line-height: 20px;
     margin: 10px 0px 10px 50px;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
 }
-.top .title {
+.title {
     font-size: 32px;
     line-height: 32px;
-    margin: 25px 0 25px 75px;
+    margin: -70px 0 15px 0px;
+}
+.nospace {
+    line-height: 0px;
 }
 .headline {
     font-size: 32px;
@@ -126,30 +139,15 @@ body {
     padding-top: 10px;
 }
 .examPle:hover {
-    color: #F5E500;
-}
-.examPle:hover {
     background:rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     opacity: 1;
-    -o-animation-name: half-fadink;
-    -o-animation-duration: 1.5s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: linear;
-    -ms-animation-name: half-fadink;
-    -ms-animation-duration: 1.5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-    -moz-animation-name: half-fadink;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
     -webkit-animation-name: half-fadink;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 2.5s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     animation-name: half-fadink;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -272,18 +270,6 @@ li:last-child {
 }
 .image:hover:after {
     opacity: 1;
-    -o-animation-name: fadink;
-    -o-animation-duration: 1.5s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-timing-function: linear;
-    -ms-animation-name: fadink;
-    -ms-animation-duration: 1.5s;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-    -moz-animation-name: fadink;
-    -moz-animation-duration: 1.5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
     -webkit-animation-name: fadink;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-iteration-count: infinite;
@@ -295,29 +281,24 @@ li:last-child {
 }
 @-webkit-keyframes fadink {
     0% { opacity: 0; }
-    10% { opacity: .2;}
-    20% { opacity: .4; }
-    30% { opacity: .6;}
-    40% { opacity: .8; }
     50% { opacity: 1;}
-    60% { opacity: .8; }
-    70% { opacity: .6;}
-    80% { opacity: .4; }
     90% { opacity: .2;}
     100% { opacity: 0; }
 }
 @-webkit-keyframes half-fadink {
-    0% { opacity: 1; }
-    10% { opacity: .95;}
-    20% { opacity: .9; }
-    30% { opacity: .85;}
-    40% { opacity: .8; }
-    50% { opacity: .75;}
-    60% { opacity: .8; }
-    70% { opacity: .85;}
-    80% { opacity: .9; }
-    90% { opacity: .95;}
-    100% { opacity: 1; }
+    0% { background-color: #000000;color: white;}
+    50% { background-color: #666666; color: #F5E500; }
+    100% { background-color: #000000;color: white;}
+}
+@keyframes fadink {
+    0% { opacity: 0; }
+    50% { opacity: 1;}
+    100% { opacity: 0; }
+}
+@keyframes half-fadink {
+    0% { background-color: #000000;color: white;}
+    50% { background-color: #666666; color: #F5E500; }
+    100% { background-color: #000000;color: white;}
 }
 #email-span, #facebook-span, #google-span, #github-span {
     display: none;
@@ -326,17 +307,21 @@ a {
     text-decoration: none;
 }
 @media screen and (max-width: 935px){
-    .top .name {
+    .name {
         font-size: 48px;
         line-height: 48px;
+        height: 100px;
     }
-    .top .title, .title {
+    .title {
         font-size: 20px;
         line-height: 20px;
-        margin-left: 25px;
+        margin-top: -50px;
+    }
+    #container {
+        margin-top: 180px;
     }
     #description {
-        margin-top: -100px;
+        margin-top: -70px;
     }
     #description, #hirable, #examples {
         width: 85%;
@@ -366,6 +351,12 @@ a {
     }
     .content {
         width: 100%;
+    }
+    .name {
+        height: 50px;
+    }
+    .title {
+        margin: 0 auto 10px;
     }
     #hirable   {
         display: table;
@@ -399,17 +390,21 @@ a {
     }
 }
 @media screen and (max-width: 660px) {
+
     .methods {
         margin-top: 0;
     }
 }
-@media screen and (max-width: 575px){
-    .top .title, .title {
+@media screen and (max-width: 595px){
+    .notTop .title, .title {
         font-size: 18px;
         line-height: 20px;
-        margin: 0 auto;
+        margin: 0 auto 10px;
         display: block;
         text-align: center;
+    }
+    .notTop h1 {
+        height: auto;
     }
     .contact {
         margin-top: 15px;
@@ -422,7 +417,7 @@ a {
     }
 }
 @media screen and (max-width: 395px){
-    .top .name, .name {
+    .notTop .name, .name {
         font-size: 36px;
         line-height: 36px;
     }
