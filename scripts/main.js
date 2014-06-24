@@ -8,4 +8,7 @@ $(document).on("ready", function(){
              $("header").removeClass("notTop");
         }
     });
+    $(".work-display").on("click", function() {
+        document.location.toString().split('#').slice(1) == this.id;
+    });
 });

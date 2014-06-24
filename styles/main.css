@@ -31,6 +31,10 @@ header {
     line-height: 76px;
     height: 140px;
     display: inline-block;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
 }
 .notTop p{
     display: inline-block;
@@ -48,6 +52,10 @@ header {
     font-size: 32px;
     line-height: 32px;
     margin: -70px 0 15px 0px;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
 }
 .nospace {
     line-height: 0px;
@@ -168,9 +176,6 @@ body {
 }
 .work-display:target {
     display: block;
-}
-.work-display {
-  display: expression((document.location.toString().split('#').slice(1) == this.id)?'block':'none');
 }
 .exampleDisplay {
     width: 50%;
